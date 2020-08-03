@@ -1,0 +1,5 @@
+
+CREATE TABLE IF NOT EXISTS store(
+    id varcahr(32) not null primary key,    name varchar(255)  ,    phone varchar(255)  ,    code varchar(255)  ,    linkman_name varchar(255)  ,    linkman_phone varchar(255)  ,    logo varchar(255)  ,    province_code varchar(255)  ,    city_code varchar(255)  ,    area_code varchar(255)  ,    address varchar(255)  ,    business_license_url varchar(255)  ,    auditor varchar(255)  ,    audit_time datetime  ,    audit_status int   ,    audit_instruction varchar(255)  ,    tenant_code varchar(255)  ,    created_at datetime  ,    created_by varchar(255)  ,    updated_at datetime  ,    updated_by varchar(255)  ,    version int   ,    dr tinyint  );
+CREATE TABLE IF NOT EXISTS channel_classify(
+    id varcahr(32) not null primary key,    p_id varchar(255)  ,    top_id varchar(255)  ,    name varchar(255)  ,    level int   ,    tenant_code varchar(255)  ,    created_at datetime  ,    created_by varchar(255)  ,    updated_at datetime  ,    updated_by varchar(255)  ,    version int   ,    dr tinyint  );
